@@ -1,0 +1,267 @@
+/* HEADER INDEX*/
+
+.fondo-index{
+    background-image: linear-gradient(rgba(59, 59, 59, 0.525),rgba(77, 77, 77, 0.213), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url(../Assets/img/mujer-wallpaper.png);
+   /* background-image: linear-gradient(rgba(59, 59, 59, 0.525),rgba(129, 129, 129, 0.213), rgba(129, 129, 129, 0), rgb(19, 20, 29)), url(../Assets/img/mujer\ orando\ en\ el\ mar.jpg);*/
+    background-repeat: $bg-repeticion;
+    background-size: $bg-tamano;
+    background-position: $bg-posicion;
+    background-attachment: fixed;
+}
+
+.navbar-collapse{
+    margin-left: 22px;
+    .navbar-nav{
+        margin-right: 15px;
+        .nav-item {
+            padding: 7px;
+            letter-spacing: $letter-espacio;
+            font-size:90%;
+            &:hover{
+                transform: scale(1.1);
+            }
+    }
+}
+}
+
+.titulo-principal-index{
+    margin-bottom: 0;
+    font-weight: $fuente-grande;
+    font-size: $fuente-titulo;
+    word-break: break-word;
+    color:$color-primario;
+    span{
+        font-weight: $fuente-grande;
+        font-size: $fuente-titulo;
+        word-break: break-word;
+        color:rgb(252, 202, 37);
+    }
+}
+
+.texto-secundario-index{
+    font-size: $fuente-texto;
+    color: $color-primario ;
+    margin-top: 0px;
+}
+
+.btn-index{
+    font-size: $fuente-texto;
+    padding:10px 25px;
+}
+
+/* HEADER QUIENES SOMOS*/
+
+.fondo-nosotros{
+    background-image: linear-gradient(rgba(253, 253, 253, 0),rgba(253, 253, 253, 0),rgba(253, 253, 253, 0),rgb(18, 18, 28)),url(../Assets/img/fondo-about-final.png);
+    background-repeat: $bg-repeticion;
+    background-position:$bg-posicion;
+    background-size: $bg-tamano;
+    height:150vh;
+}
+
+.texto-secundario{
+    font-weight:$fuente-grande;
+    font-size: $fuente-titulo;
+    margin-left: 90px;
+    width:100%;
+    color:$color-secundario;
+}
+
+/* HEADER VIAJES MISIONEROS*/
+
+.fondo-viajes{
+    background-image: linear-gradient(rgba(110, 110, 110, 0.847),rgba(14, 14, 14, 0.499),rgba(187, 187, 187, 0.071)),url(../Assets/img/wall-comudidad.JPG);
+    background-repeat: $bg-repeticion;
+    background-size: $bg-tamano;
+    background-position: $bg-posicion;
+    background-attachment: fixed;
+}
+
+.header-content-viajes{
+    margin-top: 125px;
+    h1{
+        color:$color-primario;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .texto-principal{
+        font-weight:$fuente-grande;
+        font-size: $fuente-titulo;
+        color:$color-primario;
+    }
+}
+
+
+/* HEADER DAR*/
+
+.fondo-dar{
+    background-image: linear-gradient(rgba(130, 130, 130, 0.064),rgba(45, 45, 50, 0.121),rgb(0, 0, 0)),url(../Assets/img/Manos\ unidas.jpg);
+    background-repeat: $bg-repeticion;
+    background-size: $bg-tamano;
+    background-position: $bg-posicion;
+    background-attachment: fixed;
+}
+
+/*HEADER APLICA*/
+
+.fondo-aplica-ahora{
+    background-color:rgb(254, 186, 12);
+}
+
+
+@media (min-width: 0px) {
+    .navbar-brand img{
+        width:75px;
+        margin-top: 0px;
+    }
+
+    .header-content{
+        h1{
+            font-size: 40px;
+            margin-top: 50px;
+            span{
+                font-size: 40px;
+            }
+            }
+        p{
+            font-size:13px;
+        }
+        a{
+            font-size:13px;
+            padding:10px 30px;
+        }
+    }
+        
+    /*pag quienes somos*/
+
+    .texto-secundario {
+        font-size: 45px;
+        line-height: 1.3;
+        margin-left: 0px;
+    }
+
+    /*pag viajes misioneros*/
+    .header-content-viajes{
+        .texto-principal{
+            font-size: 45px;
+        }
+    }
+}
+
+
+@media (min-width: 576px) {
+    .header-content{
+        h1{
+            font-size: 42px;
+            margin-top: 30px;
+            span{
+                font-size: 42px;
+            }
+            }
+        p{
+            font-size:13px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+    /*pag quienes somos*/
+
+    .texto-secundario {
+        font-size: 50px;
+        width: 100%;
+        margin-left:30px
+    }
+
+    /*pag viajes misioneros*/
+    .header-content-viajes{
+        .texto-principal{
+            font-size: 55px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img{
+     width:100px;
+    }
+ 
+    .header-content{
+        h1{
+            font-size: 42px;
+            span{
+                font-size: 42px;
+            }
+            }
+        p{
+            font-size:13px;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding:0px;
+        }
+        a{
+            font-size:13px;
+        }
+    }
+
+     /*pag quienes somos*/
+
+     .texto-secundario{
+        line-height: 1.6;
+        margin-left: 100px;
+        font-size: 50px;
+    }
+
+    }
+
+
+@media (min-width: 992px) {
+    
+    .navbar-brand img{
+        width:120px;
+       }
+
+    .header-content{
+        h1{
+            font-size: 49px;
+            span{
+                font-size: 49px;
+            }
+            }
+        p{
+            font-size:14px;
+        }
+        a{
+            font-size:13px;
+        }
+    }
+
+    /*pag quienes somos*/
+
+    .texto-secundario{
+        font-size: 55px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .header-content{
+        h1{
+            font-size: 58px;
+            span{
+                font-size: 58px;
+            }
+            }
+        p{
+            font-size:$fuente-texto;
+            width:80%;
+            margin-left: 10%;
+        }
+        a{
+            font-size:$fuente-texto;
+        }
+    }
+
+}

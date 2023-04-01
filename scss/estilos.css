@@ -1,0 +1,1092 @@
+@charset "UTF-8";
+/*variables*/
+/*mapa*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  letter-spacing: -0.02em;
+  vertical-align: baseline;
+  line-height: 1.6;
+}
+
+/*titulos y subtitulos*/
+.seccion-container {
+  margin-top: 0px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.subtitulo-main {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  padding: 30px;
+  top: 100px;
+  margin-left: 45px;
+  color: rgb(48, 48, 48);
+}
+
+.titulo-principal-main {
+  font-weight: 700;
+  font-size: 46px;
+  margin-left: 75px;
+  width: 70%;
+  color: rgb(0, 0, 0);
+}
+
+.titulo-alternativo {
+  font-size: 55px;
+  width: 100%;
+  color: rgb(4, 31, 210);
+  padding-top: 80px;
+  margin-top: 0px;
+  line-height: 1.6;
+}
+
+.subtitulo-negrita {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  margin-top: 40px;
+  top: 100px;
+  margin-left: 90px;
+  color: rgb(48, 48, 48);
+}
+
+/*section-cards*/
+.container-cards {
+  margin-bottom: 105px;
+}
+
+.card, .card-v {
+  border-radius: 15px;
+  width: 100%;
+  height: 73vh;
+  margin-bottom: 30px;
+  border: none;
+}
+.card:hover, .card-v:hover {
+  transform: translateY(-3%);
+}
+.card .card-img, .card-v .card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  transition: all 1s;
+  filter: brightness(65%);
+}
+
+/*botones*/
+.btn {
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/*** ESTILOS BOTÓN SLIDE LEFT ***/
+.ov-btn-slide-left {
+  background: linear-gradient(45deg, #425eff, #42a0fe);
+  color: rgb(255, 255, 255);
+  border: #0d6efd;
+  border-radius: 25px;
+  padding: 16px 25px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.ov-btn-slide-left:hover {
+  color: rgb(255, 255, 255);
+}
+
+.ov-btn-slide-left::after {
+  content: "";
+  background: linear-gradient(to right, #13131e, #172345, #172345, #425eff, #42a0fe);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 25px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  transition: all 0.35s;
+}
+
+.ov-btn-slide-left:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+
+/*lineas*/
+.underline {
+  display: inline-block;
+  position: relative;
+}
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(192, 192, 192);
+  transform-origin: bottom right;
+  transition: transform 0.56s ease-out;
+}
+
+.underline-n {
+  display: inline-block;
+  position: relative;
+}
+.underline-n:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.underline-n:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.954);
+  transform-origin: bottom right;
+  transition: transform 0.56s ease-out;
+}
+
+.featurette-divider {
+  margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 0px) {
+  .subtitulo-negrita {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 576px) {
+  .subtitulo-negrita {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .seccion-container {
+    margin-top: 0px;
+  }
+  .subtitulo-negrita {
+    margin-left: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .seccion-container {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .seccion-container {
+    margin-top: 0px;
+  }
+}
+/* HEADER INDEX*/
+.fondo-index {
+  background-image: linear-gradient(rgba(59, 59, 59, 0.525), rgba(77, 77, 77, 0.213), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url(../Assets/img/mujer-wallpaper.png);
+  /* background-image: linear-gradient(rgba(59, 59, 59, 0.525),rgba(129, 129, 129, 0.213), rgba(129, 129, 129, 0), rgb(19, 20, 29)), url(../Assets/img/mujer\ orando\ en\ el\ mar.jpg);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar-collapse {
+  margin-left: 22px;
+}
+.navbar-collapse .navbar-nav {
+  margin-right: 15px;
+}
+.navbar-collapse .navbar-nav .nav-item {
+  padding: 7px;
+  letter-spacing: 0.2em;
+  font-size: 90%;
+}
+.navbar-collapse .navbar-nav .nav-item:hover {
+  transform: scale(1.1);
+}
+
+.titulo-principal-index {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 55px;
+  word-break: break-word;
+  color: rgb(255, 255, 255);
+}
+.titulo-principal-index span {
+  font-weight: 700;
+  font-size: 55px;
+  word-break: break-word;
+  color: rgb(252, 202, 37);
+}
+
+.texto-secundario-index {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
+}
+
+.btn-index {
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+/* HEADER QUIENES SOMOS*/
+.fondo-nosotros {
+  background-image: linear-gradient(rgba(253, 253, 253, 0), rgba(253, 253, 253, 0), rgba(253, 253, 253, 0), rgb(18, 18, 28)), url(../Assets/img/fondo-about-final.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150vh;
+}
+
+.texto-secundario {
+  font-weight: 700;
+  font-size: 55px;
+  margin-left: 90px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+
+/* HEADER VIAJES MISIONEROS*/
+.fondo-viajes {
+  background-image: linear-gradient(rgba(110, 110, 110, 0.847), rgba(14, 14, 14, 0.499), rgba(187, 187, 187, 0.071)), url(../Assets/img/wall-comudidad.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-content-viajes {
+  margin-top: 125px;
+}
+.header-content-viajes h1 {
+  color: rgb(255, 255, 255);
+  margin-left: 0px;
+  margin-top: 10px;
+}
+.header-content-viajes .texto-principal {
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+}
+
+/* HEADER DAR*/
+.fondo-dar {
+  background-image: linear-gradient(rgba(130, 130, 130, 0.064), rgba(45, 45, 50, 0.121), rgb(0, 0, 0)), url(../Assets/img/Manos\ unidas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*HEADER APLICA*/
+.fondo-aplica-ahora {
+  background-color: rgb(254, 186, 12);
+}
+
+@media (min-width: 0px) {
+  .navbar-brand img {
+    width: 75px;
+    margin-top: 0px;
+  }
+  .header-content h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .header-content h1 span {
+    font-size: 40px;
+  }
+  .header-content p {
+    font-size: 13px;
+  }
+  .header-content a {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+  /*pag quienes somos*/
+  .texto-secundario {
+    font-size: 45px;
+    line-height: 1.3;
+    margin-left: 0px;
+  }
+  /*pag viajes misioneros*/
+  .header-content-viajes .texto-principal {
+    font-size: 45px;
+  }
+}
+@media (min-width: 576px) {
+  .header-content h1 {
+    font-size: 42px;
+    margin-top: 30px;
+  }
+  .header-content h1 span {
+    font-size: 42px;
+  }
+  .header-content p {
+    font-size: 13px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /*pag quienes somos*/
+  .texto-secundario {
+    font-size: 50px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  /*pag viajes misioneros*/
+  .header-content-viajes .texto-principal {
+    font-size: 55px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .header-content h1 {
+    font-size: 42px;
+  }
+  .header-content h1 span {
+    font-size: 42px;
+  }
+  .header-content p {
+    font-size: 13px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0px;
+  }
+  .header-content a {
+    font-size: 13px;
+  }
+  /*pag quienes somos*/
+  .texto-secundario {
+    line-height: 1.6;
+    margin-left: 100px;
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+  .header-content h1 {
+    font-size: 49px;
+  }
+  .header-content h1 span {
+    font-size: 49px;
+  }
+  .header-content p {
+    font-size: 14px;
+  }
+  .header-content a {
+    font-size: 13px;
+  }
+  /*pag quienes somos*/
+  .texto-secundario {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-content h1 {
+    font-size: 58px;
+  }
+  .header-content h1 span {
+    font-size: 58px;
+  }
+  .header-content p {
+    font-size: 14px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .header-content a {
+    font-size: 14px;
+  }
+}
+/* MAIN INDEX*/
+/*section-about-us*/
+.about-content {
+  padding-top: 150px;
+  padding-bottom: 155px;
+  width: 101%;
+  /*
+  background-image: linear-gradient(rgb(18, 19, 33),rgba(14, 14, 14, 0),rgb(249, 249, 249)),url(../Assets/img/mar-wp.jpg);
+  background-image: url(../Assets/img/fondo-pintura.JPG);
+  background-repeat: $bg-repeticion;
+  background-size: $bg-tamano;
+  background-position: $bg-posicion;*/
+  /*** ESTILOS BOTÓN SLIDE RIGHT ***/
+}
+.about-content .subtitulo-main {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  padding: 30px;
+  top: 100px;
+  margin-left: 45px;
+  color: rgb(48, 48, 48);
+}
+.about-content .titulo-principal-main {
+  font-weight: 700;
+  font-size: 46px;
+  margin-left: 75px;
+  width: 70%;
+  color: rgb(0, 0, 0);
+}
+.about-content .ov-btn-slide-right {
+  background: linear-gradient(to right, #13131e, #172345, #172345, #425eff, #42a0fe);
+  color: rgb(255, 255, 255);
+  border: #425eff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.about-content .ov-btn-slide-right:hover {
+  color: rgb(255, 255, 255);
+}
+.about-content .ov-btn-slide-right:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+.about-content .ov-btn-slide-right::after {
+  content: "";
+  background: linear-gradient(45deg, #425eff, #42a0fe);
+  position: absolute;
+  z-index: -1;
+  padding: 10px 20px 10px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
+  transition: all 0.35s;
+}
+.about-content .btn-about {
+  margin-top: 15px;
+}
+
+/*section-cards*/
+.card h2, .card-v h2 {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-weight: 700;
+  font-size: 28px;
+  word-wrap: break-word;
+  color: rgb(255, 255, 255);
+}
+.card p, .card-v p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  right: 10%;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+
+/*section-video*/
+.section-video {
+  width: 100%;
+  background-color: rgb(15, 15, 26);
+  padding-top: 75px;
+  padding-bottom: 5px;
+}
+.section-video h2 {
+  color: rgb(255, 255, 255);
+}
+.section-video p {
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+.section-video .container-video {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  margin-bottom: 25px;
+}
+.section-video .container-video iframe {
+  position: absolute;
+  height: 85%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+/*section-apply-here*/
+.fondo-index-apply {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.36), rgba(38, 26, 10, 0.421), rgba(51, 27, 6, 0.362)), url(../Assets/img/noche\ estrellada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.fondo-index-apply .section-apply {
+  padding-top: 250px;
+  padding-bottom: 260px;
+  color: rgb(255, 255, 255);
+}
+.fondo-index-apply .section-apply .subtitulo-apply-now {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.fondo-index-apply .section-apply .titulo-apply-now {
+  font-weight: 700;
+  font-size: 46px;
+}
+.fondo-index-apply .section-apply .btn-index-apply {
+  padding: 10px 25px;
+}
+
+@media (min-width: 0px) {
+  .about-content {
+    padding-bottom: 100px;
+  }
+  .about-content .titulo-principal-main {
+    font-size: 40px;
+  }
+  .about-content .btn-about {
+    margin-left: 60px;
+  }
+  .section-video p {
+    font-size: 35px;
+  }
+  .section-video .container-video {
+    margin-bottom: 100px;
+  }
+  .section-video .container-video iframe {
+    height: 100%;
+  }
+  .fondo-index-apply .section-apply .titulo-apply-now {
+    font-size: 35px;
+  }
+}
+@media (min-width: 576px) {
+  .about-content .titulo-principal-main {
+    font-size: 44px;
+  }
+  .section-video p {
+    font-size: 40px;
+  }
+  .fondo-index-apply .section-apply .titulo-apply-now {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .about-content {
+    padding-bottom: 155px;
+  }
+  .about-content .titulo-principal-main {
+    font-size: 46px;
+  }
+  .section-video p {
+    font-size: 46px;
+  }
+  .section-video .container-video {
+    margin-bottom: 20px;
+    width: 85%;
+  }
+  .section-video .container-video iframe {
+    height: 85%;
+  }
+  .fondo-index-apply .section-apply .titulo-apply-now {
+    font-size: 46px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-content .subtitulo-main {
+    margin-left: 110px;
+  }
+  .about-content .titulo-principal-main {
+    margin-left: 130px;
+  }
+}
+/* MAIN QUIENES SOMOS*/
+/*section-quienes-somos*/
+.container-quienes {
+  background-color: rgb(18, 18, 28);
+}
+.container-quienes .col-info {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  text-align: justify;
+  min-height: 100%;
+  padding: 1rem 5rem 1rem 5rem;
+}
+.container-quienes .col-info h2 {
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+.container-quienes .col-info h3 {
+  margin-bottom: 1.5rem;
+  text-align: start;
+}
+.container-quienes .col-info p {
+  line-height: 1.5;
+}
+.container-quienes .col-info p {
+  font-size: 14px;
+  width: 100%;
+}
+.container-quienes .col-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+  height: 80%;
+  padding: 0rem 1rem;
+}
+
+/*section-mision*/
+.mision {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-image: linear-gradient(rgb(18, 18, 28), rgba(18, 18, 28, 0.688), rgba(187, 187, 187, 0.203)), url(../Assets/img/aprender\ leer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.mision .col-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  min-height: 100%;
+  padding: 0rem 5rem 1rem 5rem;
+  margin-top: 60px;
+}
+.mision .col-txt p {
+  line-height: 1.5;
+}
+.mision .col-txt p {
+  font-size: 14px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.mision .col-txt span {
+  color: rgb(3, 36, 252);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/*section-testimonios*/
+.slider-area {
+  background: rgba(189, 189, 189, 0.683);
+  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.slider-area .carousel-control-prev,
+.slider-area .carousel-control-next {
+  background: transparent;
+}
+.slider-area .img-area {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider-area .img-area img {
+  width: 100%;
+  margin-top: 40%;
+}
+.slider-area .carousel-caption {
+  position: static;
+  padding-bottom: 25 px;
+  margin-top: 0;
+}
+.slider-area .carousel-caption h3 {
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  color: rgb(32, 32, 32);
+}
+.slider-area .carousel-caption span {
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  color: rgba(4, 31, 210, 0.874);
+}
+.slider-area .carousel-caption p {
+  position: relative;
+  width: 100%;
+  padding: 0rem 5rem 1rem 5rem;
+  font-size: 13px;
+  color: rgb(80, 80, 80);
+}
+
+@media (min-width: 0px) {
+  .container-quienes .col-info {
+    padding: 1rem 4em 1rem 4rem;
+  }
+  .mision {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  .mision .col-txt {
+    padding: 1rem 3.5rem 1rem 3.5rem;
+  }
+  .slider-area .carousel-caption p {
+    padding: 0rem 2.5rem 1rem 2.5rem;
+    font-size: 12px;
+  }
+}
+@media (min-width: 576px) {
+  .slider-area .carousel-caption p {
+    padding: 0rem 2.5rem 1rem 2.5rem;
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .container-quienes .col-info {
+    padding: 1rem 6rem 1rem 6rem;
+  }
+  .mision .col-txt {
+    padding: 0rem 5rem 1rem 5rem;
+  }
+  .slider-area .carousel-caption p {
+    padding: 0rem 5rem 1rem 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .container-quienes .about {
+    padding-bottom: 2rem;
+  }
+  .container-quienes .about .col-info {
+    padding: 1rem 2rem 1rem 6rem;
+  }
+  .mision {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container-quienes .about {
+    padding-bottom: 5rem;
+  }
+  .container-quienes .about .col-info {
+    padding: 1rem 3.5rem 1rem 9rem;
+  }
+}
+/* MAIN VIAJES MISIONEROS*/
+/*seccion-expediciones-explicacion*/
+.viajes-col {
+  margin-top: 120px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 120px;
+}
+.viajes-col p {
+  width: 60%;
+  font-size: 15px;
+  color: rgb(86, 85, 85);
+}
+.viajes-col h2 {
+  margin-left: 0px;
+}
+.viajes-col h3 {
+  padding-top: 0px;
+}
+
+/*seccion-cards*/
+.texto-seccion-cards {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.card-v {
+  height: 50vh;
+}
+.card-v:hover {
+  transform: translateY(-3%);
+}
+.card-v h3 {
+  position: relative;
+  top: 70%;
+  font-weight: 700;
+  font-size: 28px;
+  word-wrap: break-word;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.card-v p {
+  position: absolute;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.container-viajes {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 0px) {
+  .viajes-col p {
+    width: 75%;
+    font-size: 13px;
+  }
+  .viajes-col h3 {
+    width: 90%;
+  }
+}
+@media (min-width: 576px) {
+  .viajes-col p {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .viajes-col p {
+    width: 75%;
+    font-size: 14px;
+  }
+  .viajes-col h3 {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  .viajes-col p {
+    width: 60%;
+    font-size: 15px;
+  }
+  .viajes-col h3 {
+    width: 70%;
+  }
+}
+/* MAIN DAR*/
+/*seccion-dar-explicacion*/
+.section-dar {
+  background-color: rgb(0, 0, 0);
+  padding-top: 10px;
+}
+.section-dar h2 {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  top: 100px;
+  color: rgba(194, 194, 194, 0.642);
+}
+.section-dar h3 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 35px;
+  width: 70%;
+  color: rgb(243, 241, 236);
+}
+.section-dar p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  width: 60%;
+  line-height: 1.8;
+}
+
+/*seccion-containers-dar*/
+.dar .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+.dar .col-lg-4 h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.dar .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  font-size: 13px;
+  color: rgb(86, 85, 85);
+}
+
+@media (min-width: 0px) {
+  .section-dar p {
+    font-size: 14px;
+    width: 70%;
+  }
+  .section-dar h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 576px) {
+  .section-dar p {
+    font-size: 15px;
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .section-dar p {
+    font-size: 15px;
+    width: 60%;
+  }
+  .section-dar h3 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .section-dar p {
+    font-size: 16px;
+    width: 60%;
+  }
+}
+/*MAIN APLICA*/
+/*seccion-formulario*/
+.encabezado h1 {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  margin-top: 50px;
+  top: 100px;
+  color: rgb(251, 200, 32);
+}
+.encabezado p {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.col-img-ah img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0rem 2rem 4rem;
+}
+
+.col-info-ah {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  text-align: justify;
+  min-height: 100%;
+  padding: 1rem 5rem 1rem 5rem;
+}
+
+/*seccion-contactanos*/
+.contactanos {
+  background-color: rgb(245, 244, 244);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-top: 80px;
+}
+.contactanos .titulo-con {
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+}
+.contactanos .col-cont p {
+  margin-top: 20px;
+}
+.contactanos .underline {
+  font-size: 16px;
+  color: rgb(243, 178, 37);
+}
+.contactanos .underline:hover {
+  transform: scale(1.1);
+}
+.contactanos .underline::after {
+  background-color: rgb(255, 177, 7);
+  transition: transform 0.6s ease-out;
+}
+
+@media (min-width: 0px) {
+  .col-info-ah {
+    padding: 1rem 3.7rem 1rem 3.7rem;
+  }
+}
+.encabezado p {
+  padding: 0rem 1rem;
+}
+
+@media (min-width: 576px) {
+  .col-info-ah {
+    padding: 1rem 5rem 1rem 5rem;
+  }
+}
+@media (max-width: 992px) {
+  .imagen {
+    display: none;
+  }
+}
+.container-redes {
+  padding-top: 20px;
+}
+
+.btn-social {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.btn-yt {
+  font-size: 25px;
+}
+
+.btn-ig {
+  font-size: 23px;
+}
+
+.derechos-pag {
+  font-size: 12px;
+  background-color: rgba(181, 181, 181, 0.39);
+  color: rgba(37, 37, 37, 0.722);
+}
+
+.titulo-footer {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.derechos-footer {
+  margin-bottom: 0;
+}
+
+.footer-aplica {
+  background-color: rgb(255, 255, 255);
+  /*rgb(236, 234, 234*/
+}
+
+.derechos-pag-aplica {
+  font-size: 12px;
+  background-color: rgb(254, 186, 12);
+  /*rgb(251, 200, 32)*/
+  /*rgb(254, 186, 12)*/
+}/*# sourceMappingURL=estilos.css.map */

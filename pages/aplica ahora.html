@@ -11,7 +11,7 @@
          <script src="https://kit.fontawesome.com/ddfeb4a9d1.js" crossorigin="anonymous"></script>
         <!--stylesheet (BS y CSS)-->
         <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../scss/estilos.css">
     </head>
     <body>
             <!--Header y fondo index-->      
@@ -31,19 +31,19 @@
                       <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between">
                           <li class="nav-item">
-                            <a class="nav-link text-dark  text-uppercase" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link underline-n text-dark  text-uppercase" aria-current="page" href="../index.html">Inicio</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link text-dark text-uppercase" href="./quienes somos.html">Quiénes Somos</a>
+                            <a class="nav-link underline-n  text-dark text-uppercase" href="./quienes somos.html">Quiénes Somos</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link text-dark text-uppercase" href="./viajes misioneros.html">Viajes Misioneros</a>
+                            <a class="nav-link underline-n  text-dark text-uppercase" href="./viajes misioneros.html">Viajes Misioneros</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link text-dark  text-uppercase" href="./dar.html">Dar</a>
+                            <a class="nav-link underline-n text-dark  text-uppercase" href="./dar.html">Dar</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link text-dark text-uppercase" href="#">Aplica Ahora</a>
+                            <a class="nav-link underline-n text-dark text-uppercase" href="#">Aplica Ahora</a>
                           </li>
                         </ul>
                       </div>
@@ -52,20 +52,22 @@
 
             </header>
             
+            <!--main-->
             <main>
 
                 <div class="container-formulario" >
                     <div class=" encabezado -flex justify-content-center align-items-center text-center">
                         <h1 class="text-uppercase fw-bolder"> Aplica Ahora</h1>
-                        <p>Rellena este formulario e inicia tu proceso para asistir a una expedición misionera con nosotros.</p>
+                        <p class="fw-bolder">Rellena este formulario e inicia tu proceso para asistir a una expedición misionera con nosotros.</p>
                     </div>
 
-                <section class="row about mt-5 d-flex">
-                    <div class="col-sm-12 col-lg-5 col-img d-flex flex-column justify-content-center align-items-center">
-                        <img class="bd-placeholder-img img-fluid" " src="../Assets/img/voluntarios.png"" role="img"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+                <!--sección formulario-->
+                <section class="row mt-5 ">
+                    <div class="col-sm-12 col-lg-5 col-img-ah d-flex flex-column justify-content-center align-items-center">
+                        <img class="bd-placeholder-img imagen img-fluid" src="../Assets/img/voluntarios.png" role="img"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
                         </div>
 
-                    <div class="col-info col-sm-12 col-lg-7">
+                    <div class="col-sm-12 col-lg-7 col-info-ah">
                           <form class="row g-3">
                             <div class="col-md-6">
                               <label for="inputEmail4" class="form-label">Nombre</label>
@@ -97,11 +99,11 @@
                               </div>
                               <div class="col-md-6">
                                 <label for="inputAddress2" class="form-label">Fecha de Nacimiento</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="" required>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="(DD/MM/AAAA)" required>
                               </div>
                               <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="¿Tienes alguna duda? Coméntanos" rows="3"></textarea>
                               </div>
                               <div class="col-12">
                                 <div class="form-check">
@@ -124,48 +126,50 @@
 
                 </section>
 
+                <!--sección contactanos-->
                 <section>
                     <div class="container-fluid contactanos">
                         <div class="row">
                             <div class="col-cont col-sm-12 col-lg-6 d-flex flex-column align-items-center text-center justify-content-evenly">
                                 <h2 class="titulo-con">Visítanos</h2>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.5510891832014!2d-90.6763522!3d38.705154799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ded477c68d0f21%3A0x7e87de224aefacc9!2s36%20Missouri%20Research%20Park%20Ct%2C%20St%20Charles%2C%20MO%2063304%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1677106579922!5m2!1ses-419!2smx" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <p>36 Missouri Research Park Ct, St Charles, MO 63304, EE. UU.</p>
+                                <p class="underline">36 Missouri Research Park Ct, St Charles, MO 63304, EE. UU.</p>
                             </div>
                             <div class="col-sm-12 col-lg-6  d-flex flex-column align-items-center justify-content-evenly text-center">
                                 <div>
                                     <h2 class="titulo-con">Contáctanos</h2>
-                                    <p>info@misionglobal.cc</p>
+                                    <p class="underline">info@misionglobal.cc</p>
                                 </div>
                                 <div>
                                     <h3 class="titulo-con">Llámanos</h3>
-                                    <p>+52 456 234 897</p>
+                                    <p class="underline">+52 456 234 897</p>
                                 </div>
-                                    
+                  
                             </div>
                         </div>
                     </div>
                 </section>
 
-
             </main>
+
+            <!--footer-->
             <footer class="text-center footer-style">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col footer-col ">
+                        <div class="col footer-col footer-aplica">
                             <ul class="container-redes list-inline d-flex flex-row justify-content-center align-items-center text-center ">
-                                <li>
-                                    <a  target="_blank" href="www.outlook.live.com" class="btn-social btn-outline"><i class="fa-solid fa-envelope"></i></a>
-                                </li>
-                                <li>
-                                    <a  target="_blank" href="www.instagram.com" class="btn-social btn-ig btn-outline"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a  target="_blank" href="www.facebook.com" class="btn-social btn-outline"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a  target="_blank" href="www.youtube.com" class="btn-social btn-yt btn-outline"><i class="fa-brands fa-youtube"></i></a>
-                                </li>
+                              <li>
+                                <a  target="_blank" href="https://outlook.live.com" class="btn-social btn-outline"><i class="fa-solid fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="https://www.instagram.com" class="btn-social btn-ig btn-outline"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="https://www.facebook.com" class="btn-social btn-outline"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="https://www.youtube.com" class="btn-social btn-yt btn-outline"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
                             </ul>
                         </div>
                     </div>

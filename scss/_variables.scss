@@ -1,0 +1,38 @@
+/*variables*/
+$color-primario: rgb(255, 255, 255);
+$color-secundario: rgb(0, 0, 0);
+$color-azul: rgb(4, 31, 210);
+$color-gris-subtitulo: rgb(48, 48, 48);
+$color-gris-texto:rgb(86, 85, 85);
+
+$fuente-titulo: 55px;
+$fuente-subtitulo: 12px;
+$fuente-encabezado: 46px;
+$fuente-texto: 14px;
+$fuente-cards:13px;
+$fuente-grande: 700;
+$justify-titles: center;
+$justify-texto: justify;
+
+$border-card: 15px;
+$border-btn: 25px;
+$letter-espacio: +0.2em;
+$animacion-cards:translateY(-3%);
+
+$bg-repeticion: no-repeat;
+$bg-tamano: cover;
+$bg-posicion: center;
+
+/*mapa*/
+$object-fit:(
+    contain: contain,
+    cover: cover,
+    fill: fill,
+    inherit: inherit,
+    initial: initial,
+    none: none,
+    revert: revert,
+    scale: scale-down,
+    unset: unset,
+);
+

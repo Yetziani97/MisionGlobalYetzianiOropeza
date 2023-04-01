@@ -1,0 +1,109 @@
+/* MAIN VIAJES MISIONEROS*/
+
+/*seccion-expediciones-explicacion*/
+
+.viajes-col{
+    margin-top: 120px;
+    text-align: $justify-titles;
+    width:100%;
+    height:auto;
+    margin-bottom: 120px;
+    p{
+        width: 60%;
+        font-size: 15px;
+        color:$color-gris-texto;
+    }
+    h2{
+        margin-left:0px;
+    }
+    h3{
+        padding-top: 0px;
+    }
+}
+
+
+/*seccion-cards*/
+.texto-seccion-cards{
+    margin-top: 70px;
+    margin-bottom:30px;
+}
+
+.card-v{
+    @extend .card;
+    height: 50vh;
+    &:hover{
+        transform: $animacion-cards;
+    }
+    h3{
+        position:relative;
+        top:70%;
+        font-weight:$fuente-grande;
+        font-size: 28px;
+        word-wrap: break-word;
+        color: $color-primario;
+        text-align: $justify-titles;
+    }
+    p{
+        position:absolute;
+        font-size: $fuente-cards;
+        color: $color-primario;
+        text-align: $justify-titles;
+    }
+}
+
+.container-viajes{
+    margin-bottom: 0px;
+}
+
+
+@media (min-width: 0px) {
+    .viajes-col{
+        p{
+            width: 75%;
+            font-size: 13px;
+        }
+        h3{
+            width:90%;
+        }
+    }
+ }
+ 
+ @media (min-width: 576px) {
+    .viajes-col{
+        p{
+            width: 80%;
+            font-size: 14px;
+        }
+    }    
+ }
+ 
+
+ @media (min-width: 768px) {
+    .viajes-col{
+        p{
+            width: 75%;
+            font-size: 14px;
+        }
+        h3{
+            width:90%;
+        }
+    }
+ }
+    
+ @media (min-width: 992px) {
+    .viajes-col{
+        p{
+            width: 60%;
+            font-size: 15px;
+        }
+        h3{
+            width:70%;
+        }
+    }
+ }
+
+
+
+
+ 
+

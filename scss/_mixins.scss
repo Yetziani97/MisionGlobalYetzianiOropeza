@@ -1,0 +1,10 @@
+@mixin flexible($item-align,$padding){
+    display: flex;
+    flex-direction: column;
+    align-items: $item-align;
+    justify-content: center;
+    text-align: $justify-texto;
+    min-height: 100%;
+    padding: $padding;
+    }
+        

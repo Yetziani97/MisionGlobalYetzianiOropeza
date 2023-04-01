@@ -1,0 +1,259 @@
+/* MAIN INDEX*/
+
+/*section-about-us*/
+
+
+.about-content{
+    padding-top: 150px;
+    padding-bottom: 155px;
+    width:101%;
+    /*
+    background-image: linear-gradient(rgb(18, 19, 33),rgba(14, 14, 14, 0),rgb(249, 249, 249)),url(../Assets/img/mar-wp.jpg);
+    background-image: url(../Assets/img/fondo-pintura.JPG);
+    background-repeat: $bg-repeticion;
+    background-size: $bg-tamano;
+    background-position: $bg-posicion;*/
+
+    .subtitulo-main{
+        font-size: $fuente-subtitulo;
+        letter-spacing: $letter-espacio;
+        padding: 30px;
+        top: 100px;
+        margin-left: 45px;
+        color: $color-gris-subtitulo;
+    }
+    .titulo-principal-main{
+        font-weight:$fuente-grande;
+        font-size: $fuente-encabezado;
+        margin-left: 75px;
+        width:70%;
+        color:$color-secundario;
+    }
+    /*** ESTILOS BOTÓN SLIDE RIGHT ***/
+    .ov-btn-slide-right {
+        background: linear-gradient(to right,#13131e,#172345,#172345,#425eff,#42a0fe) ; 
+        color: $color-primario; 
+        border:  #425eff; 
+        padding: 10px 20px 10px 20px;
+        border-radius: $border-btn; 
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+        &:hover{
+            color: $color-primario; 
+            &::after {
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                -webkit-transition: all 0.35s;
+                transition: all 0.35s;
+                }
+            }    
+        &::after{
+            content: "";
+            background: linear-gradient(45deg,#425eff,#42a0fe);
+            position: absolute;
+            z-index: -1;
+            padding: 10px 20px 10px 20px;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            right: -100%;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+              }
+        }
+    .btn-about{
+        margin-top: 15px;
+    }
+}
+
+/*section-cards*/
+.card{
+    h2{
+        position:absolute;
+            top:70%;
+            left:10%;
+            font-weight:$fuente-grande;
+            font-size: 28px;
+            word-wrap: break-word;
+            color: $color-primario;
+        }
+    p{
+        position:absolute;
+        top:80%;
+        left:10%;
+        right:10%;
+        font-size: $fuente-cards;
+        color: $color-primario;
+    }  
+}
+
+
+/*section-video*/
+.section-video{
+    width:100%;
+    background-color: rgb(15, 15, 26);
+    padding-top: 75px;
+    padding-bottom: 5px;
+    h2{
+        color:$color-primario;
+    }
+    p{
+        color:$color-primario;
+        margin-bottom: 50px;
+    }
+    .container-video{
+        width:100%;
+        padding-top:56.25%;
+        position:relative;
+        margin-bottom: 25px;
+        iframe{
+            position:absolute;
+            height:85%;
+            width:100%;
+            top:0px;
+            left:0px;
+        }
+    }
+}
+
+/*section-apply-here*/
+
+.fondo-index-apply{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.36), rgba(38, 26, 10, 0.421), rgba(51, 27, 6, 0.362)),url(../Assets/img/noche\ estrellada.jpg);
+    background-repeat: $bg-repeticion;
+    background-size: $bg-tamano;
+    background-position: $bg-posicion;
+    background-attachment: fixed;
+    .section-apply{
+        padding-top: 250px;
+        padding-bottom: 260px;
+        color:$color-primario;
+        .subtitulo-apply-now{
+            font-size: $fuente-subtitulo;
+            letter-spacing:$letter-espacio ;
+            margin-bottom: 20px;
+        }
+        .titulo-apply-now{
+            font-weight:$fuente-grande;
+            font-size: $fuente-encabezado;
+        }
+        .btn-index-apply{
+            padding: 10px 25px;
+        
+        }
+    }
+}
+
+
+@media (min-width: 0px) {
+    .about-content{
+        padding-bottom: 100px;
+    
+        .titulo-principal-main{
+            font-size: 40px;
+        }
+
+        .btn-about{
+            margin-left: 60px;
+        }
+    }
+
+ 
+    .section-video{
+        p{
+        font-size: 35px; 
+        }
+        .container-video{
+            margin-bottom: 100px;
+        }
+        .container-video{
+            iframe{
+                height: 100%;
+            }
+        }
+    }
+
+    .fondo-index-apply{
+        .section-apply{
+            .titulo-apply-now{
+                font-size: 35px;
+           }
+        }
+    }
+
+}
+ 
+ @media (min-width: 576px) {
+    .about-content{
+        .titulo-principal-main{
+            font-size: 44px;
+        }
+    }
+
+    .section-video{
+        p{
+        font-size: 40px; 
+        }
+    }
+
+    .fondo-index-apply{
+        .section-apply{
+            .titulo-apply-now{
+                font-size: 40px;
+           }
+        }
+    }
+ }
+ 
+ 
+ @media (min-width: 768px) {
+    .about-content{
+        padding-bottom: 155px;
+    
+        .titulo-principal-main{
+            font-size: 46px;
+        }
+    }
+ 
+    .section-video{
+        p{
+            font-size: 46px; 
+        }
+        .container-video{
+            margin-bottom: 20px;
+            width:85%;
+        }
+        .container-video{
+            iframe{
+                height: 85%;
+            }
+        }
+    }
+
+    .fondo-index-apply{
+        .section-apply{
+            .titulo-apply-now{
+                font-size: 46px;
+           }
+        }
+    }
+ }
+
+   
+ @media (min-width: 1200px) {
+    .about-content{
+        .subtitulo-main{
+            margin-left:110px;
+        }
+        .titulo-principal-main{
+            margin-left:130px;
+        }
+    }
+ }
+
+ 
