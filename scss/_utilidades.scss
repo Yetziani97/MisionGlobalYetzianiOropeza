@@ -160,7 +160,7 @@
 }
 
 .featurette-divider {
-  margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 0px;
 }
 
 /* Thin out the marketing headings */
@@ -171,7 +171,15 @@
   letter-spacing: -.05rem;
 }
 
+.row{
+  margin:0;
+}
 
+body{
+  position:relative;
+  padding-bottom: 7.2em;
+  min-height: 100vh;
+}
 
 @media (min-width: 0px) {
 
@@ -179,11 +187,21 @@
       margin-left: 0px;
   }
 
+  .titulo-alternativo{
+    font-size: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
 }
 
 @media (min-width: 576px) {
   .subtitulo-negrita{
   margin-left: 30px;
+  }
+
+  .titulo-alternativo{
+    font-size: 50px;
   }
 
 }
@@ -203,7 +221,11 @@
   .seccion-container{
       margin-top: 10px;
      }
+
+  .titulo-alternativo{
+    font-size: 55px;
   }
+}
 
   @media (min-width: 1200px) {
     .seccion-container{

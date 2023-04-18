@@ -29,22 +29,25 @@
 /*seccion-containers-dar*/
 
 .dar {
+    margin-top: 3.5rem;
     .col-lg-4 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
     text-align: $justify-titles;
-    padding: 2rem;
+    padding: 0rem 2rem;
     h2 {
         font-weight:$fuente-grande;
         font-size: 30px;
         color:$color-secundario;
-    
       }
     p {
         margin-right: .75rem;
         margin-left: .75rem;
-        font-size: $fuente-cards;
+        font-size: 13.7px;
         color: $color-gris-texto;
       }
+    hr{
+        margin-top: 4rem;
+    }
     }
 }
 
@@ -57,6 +60,14 @@
         }
         h3{
             font-size:30px;
+        }
+    }
+
+    .dar {
+        .col-lg-4 {
+        hr{
+            margin-top: 4rem;
+        }
         }
     }
 }
@@ -87,6 +98,13 @@
         p{
             font-size:16px;
             width:60%;
+        }
+    }
+    .dar {
+        .col-lg-4 {
+        hr{
+            display: none;
+        }
         }
     }
 }

@@ -1,3 +1,10 @@
+.footer-style{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:0;
+}
+
 .container-redes{
     padding-top: 20px;
 }
@@ -45,4 +52,8 @@
     /*rgb(254, 186, 12)*/
 }
 
-
+.footer-404{
+    background-color: rgb(254, 186, 12);
+    font-size: $fuente-subtitulo;
+    color: rgba(37, 37, 37, 0.722);
+}

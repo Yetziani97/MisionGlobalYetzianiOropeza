@@ -6,13 +6,8 @@
 .about-content{
     padding-top: 150px;
     padding-bottom: 155px;
-    width:101%;
-    /*
-    background-image: linear-gradient(rgb(18, 19, 33),rgba(14, 14, 14, 0),rgb(249, 249, 249)),url(../Assets/img/mar-wp.jpg);
-    background-image: url(../Assets/img/fondo-pintura.JPG);
-    background-repeat: $bg-repeticion;
-    background-size: $bg-tamano;
-    background-position: $bg-posicion;*/
+    width:100%;
+
 
     .subtitulo-main{
         font-size: $fuente-subtitulo;
@@ -75,7 +70,7 @@
 .card{
     h2{
         position:absolute;
-            top:70%;
+            top:65%;
             left:10%;
             font-weight:$fuente-grande;
             font-size: 28px;
@@ -84,7 +79,7 @@
         }
     p{
         position:absolute;
-        top:80%;
+        top:73%;
         left:10%;
         right:10%;
         font-size: $fuente-cards;
@@ -124,7 +119,7 @@
 /*section-apply-here*/
 
 .fondo-index-apply{
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.36), rgba(38, 26, 10, 0.421), rgba(51, 27, 6, 0.362)),url(../Assets/img/noche\ estrellada.jpg);
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.36), rgba(38, 26, 10, 0.421), rgba(51, 27, 6, 0.362)),url(../assets/img/wall-noche-estrellada-gd.jpg);
     background-repeat: $bg-repeticion;
     background-size: $bg-tamano;
     background-position: $bg-posicion;
@@ -163,7 +158,18 @@
         }
     }
 
+    .card{
+        h2{
+            top:70%;
+            left:10%;
+            }
+        p{
+            top:80%;
+            font-size: 14px;
+        }  
+    }
  
+
     .section-video{
         p{
         font-size: 35px; 
@@ -182,6 +188,7 @@
         .section-apply{
             .titulo-apply-now{
                 font-size: 35px;
+                
            }
         }
     }
@@ -220,6 +227,12 @@
         }
     }
  
+    .card{
+        p{
+            font-size: 14.5px;
+        }  
+    }
+
     .section-video{
         p{
             font-size: 46px; 
@@ -244,7 +257,21 @@
     }
  }
 
-   
+ @media (min-width: 992px) {
+    .card{
+        h2{
+            top:63%;
+            left:10%;
+            }
+        p{
+            top:73%;
+            left:10%;
+            right:10%;
+        }  
+    }
+ }
+
+
  @media (min-width: 1200px) {
     .about-content{
         .subtitulo-main{
@@ -253,6 +280,12 @@
         .titulo-principal-main{
             margin-left:130px;
         }
+    }
+
+    .card{
+        p{
+            font-size: 15px;
+        }  
     }
  }
 

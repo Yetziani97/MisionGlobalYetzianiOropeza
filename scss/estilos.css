@@ -173,7 +173,7 @@
 }
 
 .featurette-divider {
-  margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 0px;
 }
 
 /* Thin out the marketing headings */
@@ -184,14 +184,32 @@
   letter-spacing: -0.05rem;
 }
 
+.row {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  padding-bottom: 7.2em;
+  min-height: 100vh;
+}
+
 @media (min-width: 0px) {
   .subtitulo-negrita {
     margin-left: 0px;
+  }
+  .titulo-alternativo {
+    font-size: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 576px) {
   .subtitulo-negrita {
     margin-left: 30px;
+  }
+  .titulo-alternativo {
+    font-size: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -206,6 +224,9 @@
   .seccion-container {
     margin-top: 10px;
   }
+  .titulo-alternativo {
+    font-size: 55px;
+  }
 }
 @media (min-width: 1200px) {
   .seccion-container {
@@ -214,12 +235,11 @@
 }
 /* HEADER INDEX*/
 .fondo-index {
-  background-image: linear-gradient(rgba(59, 59, 59, 0.525), rgba(77, 77, 77, 0.213), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url(../Assets/img/mujer-wallpaper.png);
-  /* background-image: linear-gradient(rgba(59, 59, 59, 0.525),rgba(129, 129, 129, 0.213), rgba(129, 129, 129, 0), rgb(19, 20, 29)), url(../Assets/img/mujer\ orando\ en\ el\ mar.jpg);*/
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(59, 59, 59, 0.525), rgba(77, 77, 77, 0.213), rgba(0, 0, 0, 0.088), rgba(255, 255, 255, 0)), url(../assets/img/wall-index.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .navbar-collapse {
@@ -264,7 +284,7 @@
 
 /* HEADER QUIENES SOMOS*/
 .fondo-nosotros {
-  background-image: linear-gradient(rgba(253, 253, 253, 0), rgba(253, 253, 253, 0), rgba(253, 253, 253, 0), rgb(18, 18, 28)), url(../Assets/img/fondo-about-final.png);
+  background-image: linear-gradient(rgba(114, 12, 12, 0), rgba(253, 253, 253, 0), rgba(253, 253, 253, 0), rgb(18, 18, 28)), url(../assets/img/wall-nosotros.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -281,7 +301,7 @@
 
 /* HEADER VIAJES MISIONEROS*/
 .fondo-viajes {
-  background-image: linear-gradient(rgba(110, 110, 110, 0.847), rgba(14, 14, 14, 0.499), rgba(187, 187, 187, 0.071)), url(../Assets/img/wall-comudidad.JPG);
+  background-image: linear-gradient(rgba(110, 110, 110, 0.847), rgba(14, 14, 14, 0.499), rgba(187, 187, 187, 0.071)), url(../assets/img/wall-comudidad.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -304,7 +324,7 @@
 
 /* HEADER DAR*/
 .fondo-dar {
-  background-image: linear-gradient(rgba(130, 130, 130, 0.064), rgba(45, 45, 50, 0.121), rgb(0, 0, 0)), url(../Assets/img/Manos\ unidas.jpg);
+  background-image: linear-gradient(rgba(130, 130, 130, 0.064), rgba(45, 45, 50, 0.121), rgb(0, 0, 0)), url(../assets/img/manos-unidas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -313,6 +333,11 @@
 
 /*HEADER APLICA*/
 .fondo-aplica-ahora {
+  background-color: rgb(254, 186, 12);
+}
+
+/* HEADER 404*/
+.fondo-404 {
   background-color: rgb(254, 186, 12);
 }
 
@@ -329,7 +354,10 @@
     font-size: 40px;
   }
   .header-content p {
-    font-size: 13px;
+    font-size: 13.5px;
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .header-content a {
     font-size: 13px;
@@ -344,6 +372,7 @@
   /*pag viajes misioneros*/
   .header-content-viajes .texto-principal {
     font-size: 45px;
+    padding: 0rem 2rem;
   }
 }
 @media (min-width: 576px) {
@@ -355,9 +384,10 @@
     font-size: 42px;
   }
   .header-content p {
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 10%;
     margin-right: 10%;
+    width: 80%;
   }
   /*pag quienes somos*/
   .texto-secundario {
@@ -381,10 +411,11 @@
     font-size: 42px;
   }
   .header-content p {
-    font-size: 13px;
+    font-size: 14.7px;
     margin-left: 0%;
     margin-right: 0%;
     padding: 0px;
+    width: 100%;
   }
   .header-content a {
     font-size: 13px;
@@ -398,7 +429,7 @@
 }
 @media (min-width: 992px) {
   .navbar-brand img {
-    width: 120px;
+    width: 110px;
   }
   .header-content h1 {
     font-size: 49px;
@@ -407,10 +438,10 @@
     font-size: 49px;
   }
   .header-content p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .header-content a {
-    font-size: 13px;
+    font-size: 14px;
   }
   /*pag quienes somos*/
   .texto-secundario {
@@ -425,9 +456,9 @@
     font-size: 58px;
   }
   .header-content p {
-    font-size: 14px;
-    width: 80%;
-    margin-left: 10%;
+    font-size: 15.5px;
+    width: 85%;
+    margin-left: 7%;
   }
   .header-content a {
     font-size: 14px;
@@ -438,13 +469,7 @@
 .about-content {
   padding-top: 150px;
   padding-bottom: 155px;
-  width: 101%;
-  /*
-  background-image: linear-gradient(rgb(18, 19, 33),rgba(14, 14, 14, 0),rgb(249, 249, 249)),url(../Assets/img/mar-wp.jpg);
-  background-image: url(../Assets/img/fondo-pintura.JPG);
-  background-repeat: $bg-repeticion;
-  background-size: $bg-tamano;
-  background-position: $bg-posicion;*/
+  width: 100%;
   /*** ESTILOS BOTÓN SLIDE RIGHT ***/
 }
 .about-content .subtitulo-main {
@@ -503,7 +528,7 @@
 /*section-cards*/
 .card h2, .card-v h2 {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 10%;
   font-weight: 700;
   font-size: 28px;
@@ -512,10 +537,10 @@
 }
 .card p, .card-v p {
   position: absolute;
-  top: 80%;
+  top: 73%;
   left: 10%;
   right: 10%;
-  font-size: 13px;
+  font-size: 14px;
   color: rgb(255, 255, 255);
 }
 
@@ -549,7 +574,7 @@
 
 /*section-apply-here*/
 .fondo-index-apply {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.36), rgba(38, 26, 10, 0.421), rgba(51, 27, 6, 0.362)), url(../Assets/img/noche\ estrellada.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.36), rgba(38, 26, 10, 0.421), rgba(51, 27, 6, 0.362)), url(../assets/img/wall-noche-estrellada-gd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -583,6 +608,14 @@
   .about-content .btn-about {
     margin-left: 60px;
   }
+  .card h2, .card-v h2 {
+    top: 70%;
+    left: 10%;
+  }
+  .card p, .card-v p {
+    top: 80%;
+    font-size: 14px;
+  }
   .section-video p {
     font-size: 35px;
   }
@@ -614,6 +647,9 @@
   .about-content .titulo-principal-main {
     font-size: 46px;
   }
+  .card p, .card-v p {
+    font-size: 14.5px;
+  }
   .section-video p {
     font-size: 46px;
   }
@@ -628,12 +664,26 @@
     font-size: 46px;
   }
 }
+@media (min-width: 992px) {
+  .card h2, .card-v h2 {
+    top: 63%;
+    left: 10%;
+  }
+  .card p, .card-v p {
+    top: 73%;
+    left: 10%;
+    right: 10%;
+  }
+}
 @media (min-width: 1200px) {
   .about-content .subtitulo-main {
     margin-left: 110px;
   }
   .about-content .titulo-principal-main {
     margin-left: 130px;
+  }
+  .card p, .card-v p {
+    font-size: 15px;
   }
 }
 /* MAIN QUIENES SOMOS*/
@@ -677,7 +727,7 @@
 .mision {
   padding-top: 100px;
   padding-bottom: 120px;
-  background-image: linear-gradient(rgb(18, 18, 28), rgba(18, 18, 28, 0.688), rgba(187, 187, 187, 0.203)), url(../Assets/img/aprender\ leer.jpg);
+  background-image: linear-gradient(rgb(18, 18, 28), rgba(18, 18, 28, 0.764), rgba(133, 133, 133, 0.196)), url(../assets/img/wall-mision.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -715,19 +765,22 @@
   width: 100%;
   height: auto;
 }
+.slider-area h2 {
+  color: black;
+}
 .slider-area .carousel-control-prev,
 .slider-area .carousel-control-next {
   background: transparent;
 }
 .slider-area .img-area {
   width: 350px;
-  height: 350px;
   margin: 0 auto;
   overflow: hidden;
 }
 .slider-area .img-area img {
   width: 100%;
-  margin-top: 40%;
+  margin-bottom: 10px;
+  margin-top: 7%;
 }
 .slider-area .carousel-caption {
   position: static;
@@ -748,7 +801,7 @@
   position: relative;
   width: 100%;
   padding: 0rem 5rem 1rem 5rem;
-  font-size: 13px;
+  font-size: 14px;
   color: rgb(80, 80, 80);
 }
 
@@ -849,13 +902,13 @@
 }
 .card-v p {
   position: absolute;
-  font-size: 13px;
+  font-size: 14px;
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
 .container-viajes {
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 0px) {
@@ -890,6 +943,14 @@
   .viajes-col h3 {
     width: 70%;
   }
+  .card-v h2 {
+    top: 70%;
+    left: 10%;
+  }
+  .card-v p {
+    top: 80%;
+    font-size: 15px;
+  }
 }
 /* MAIN DAR*/
 /*seccion-dar-explicacion*/
@@ -918,10 +979,13 @@
 }
 
 /*seccion-containers-dar*/
+.dar {
+  margin-top: 3.5rem;
+}
 .dar .col-lg-4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
   text-align: center;
-  padding: 2rem;
+  padding: 0rem 2rem;
 }
 .dar .col-lg-4 h2 {
   font-weight: 700;
@@ -931,8 +995,11 @@
 .dar .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  font-size: 13px;
+  font-size: 13.7px;
   color: rgb(86, 85, 85);
+}
+.dar .col-lg-4 hr {
+  margin-top: 4rem;
 }
 
 @media (min-width: 0px) {
@@ -942,6 +1009,9 @@
   }
   .section-dar h3 {
     font-size: 30px;
+  }
+  .dar .col-lg-4 hr {
+    margin-top: 4rem;
   }
 }
 @media (min-width: 576px) {
@@ -964,18 +1034,21 @@
     font-size: 16px;
     width: 60%;
   }
+  .dar .col-lg-4 hr {
+    display: none;
+  }
 }
 /*MAIN APLICA*/
 /*seccion-formulario*/
 .encabezado h1 {
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.2em;
   margin-top: 50px;
   top: 100px;
   color: rgb(251, 200, 32);
 }
 .encabezado p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
 }
 
@@ -1031,7 +1104,7 @@
   }
 }
 .encabezado p {
-  padding: 0rem 1rem;
+  padding: 0rem 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -1044,6 +1117,110 @@
     display: none;
   }
 }
+.container-404 {
+  margin-bottom: 40px;
+  margin-top: 45px;
+}
+.container-404 .img-oveja {
+  width: 90%;
+}
+.container-404 .error-404 {
+  padding: 0rem 3rem 1rem 0rem;
+}
+.container-404 .error-404 h1 {
+  font-size: 100px;
+  color: rgb(48, 48, 48);
+  margin-bottom: 15px;
+}
+.container-404 .error-404 h2 {
+  font-size: 30px;
+  color: rgb(86, 85, 85);
+  text-align: start;
+  margin-bottom: 15px;
+}
+.container-404 .error-404 .p-404 {
+  font-size: 18px;
+  color: rgb(254, 186, 12);
+}
+.container-404 .error-404 p {
+  color: rgb(86, 85, 85);
+}
+.container-404 .error-404 .btn-404 {
+  padding: 5px 15px 5px 15px;
+  margin: 0px 3px;
+  font-size: 14px;
+}
+
+@media (min-width: 0px) {
+  .container-404 .error-404 {
+    padding: 0rem 1.5rem 1rem 2.5rem;
+  }
+  .container-404 .error-404 h1 {
+    font-size: 72px;
+    text-align: center;
+  }
+  .container-404 .error-404 h2 {
+    font-size: 25px;
+  }
+  .container-404 .error-404 .p-404 {
+    font-size: 17px;
+  }
+  .container-404 .error-404 p {
+    font-size: 14px;
+  }
+  .container-404 .error-404 .btn-404 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) {
+  .container-404 .error-404 {
+    padding: 0rem 2rem 1rem 4rem;
+  }
+  .container-404 .error-404 p {
+    font-size: 15px;
+  }
+  .container-404 .error-404 .btn-404 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container-404 .error-404 {
+    padding: 0rem 4rem 1rem 1rem;
+  }
+  .container-404 .error-404 h1 {
+    font-size: 100px;
+    text-align: start;
+  }
+  .container-404 .error-404 h2 {
+    font-size: 30px;
+  }
+  .container-404 .error-404 .p-404 {
+    font-size: 18px;
+  }
+  .container-404 .error-404 p {
+    font-size: 16px;
+  }
+  .container-404 .error-404 .btn-404 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .container-404 .error-404 {
+    padding: 1rem 5rem 1rem 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container-404 .error-404 {
+    padding: 1rem 10rem 1rem 4rem;
+  }
+}
+.footer-style {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
 .container-redes {
   padding-top: 20px;
 }
@@ -1089,4 +1266,10 @@
   background-color: rgb(254, 186, 12);
   /*rgb(251, 200, 32)*/
   /*rgb(254, 186, 12)*/
+}
+
+.footer-404 {
+  background-color: rgb(254, 186, 12);
+  font-size: 12px;
+  color: rgba(37, 37, 37, 0.722);
 }/*# sourceMappingURL=estilos.css.map */

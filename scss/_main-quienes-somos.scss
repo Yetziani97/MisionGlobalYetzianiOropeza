@@ -33,7 +33,7 @@
 .mision{
     padding-top: 100px;
     padding-bottom: 120px;
-    background-image: linear-gradient(rgb(18, 18, 28),rgba(18, 18, 28, 0.688),rgba(187, 187, 187, 0.203)),url(../Assets/img/aprender\ leer.jpg);
+    background-image: linear-gradient(rgb(18, 18, 28),rgba(18, 18, 28, 0.764),rgba(133, 133, 133, 0.196)),url(../assets/img/wall-mision.jpg);
     background-repeat: $bg-repeticion;
     background-size: $bg-tamano;
     background-position: $bg-posicion;
@@ -63,18 +63,21 @@
     position: relative;
     width: 100%;
     height: auto;
+    h2{
+        color:black;
+    }
     .carousel-control-prev,
     .carousel-control-next{
     background: transparent;
     }
     .img-area{
         width: 350px;
-        height: 350px;
         margin:0 auto;
         overflow: hidden;
         img{
             width:100%;
-            margin-top: 40%;
+            margin-bottom: 10px;
+            margin-top: 7%;
         }
     }
     .carousel-caption{

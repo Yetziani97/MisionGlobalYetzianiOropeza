@@ -4,14 +4,14 @@
 
 .encabezado{
     h1{
-        font-size: $fuente-texto;
+        font-size: 15px;
         letter-spacing: $letter-espacio;
         margin-top: 50px;
         top: 100px;
         color:rgb(251, 200, 32);
         }
     p{
-        font-size: 15px;
+        font-size: 16px;
         color:$color-secundario;
         }
 }
@@ -71,7 +71,7 @@
 
  .encabezado{
     p{
-        padding: 0rem 1rem;
+        padding: 0rem 1.5rem;
         }
 }
  
